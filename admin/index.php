@@ -1,4 +1,12 @@
 <?php
+	session_start();
+
+	if (!isset($_SESSION['login'])) {
+
+		header("location: login.php");
+		exit();
+	}
+
 
 	include 'includes/header.php';
 	include 'includes/sidebar.php';
@@ -12,13 +20,16 @@
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Dashboard</li>
+				<li class="active">Dashboard
+				
+				</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Dashboard</h1>
+				<h1 class="page-header">Dashboard
+					<?php print_r($_SESSION); ?></h1>
 			</div>
 		</div><!--/.row-->
 		

@@ -41,7 +41,7 @@
 							<td><?= $user['priv'] == 0 ? "Admin" : "User"; ?></td>
 
 							<td>
-								<a class="btn btn-primary" href="">Edit</a>
+								<a class="btn btn-primary" href="?action=edit&id=<?= $user['id'] ?>">Edit</a>
 								<!-- <a class="btn btn-danger" href="">Delete</a> -->
 
 								<!-- Button trigger modal -->

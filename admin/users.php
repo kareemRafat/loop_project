@@ -37,6 +37,12 @@
 					include "design/user_add.php";
 
 
+				} elseif($_GET['action'] == 'edit') {
+					include "design/user_edit.php";
+				} else {
+
+					echo "Page Not found 404";
+
 				}
 
 			  ?>

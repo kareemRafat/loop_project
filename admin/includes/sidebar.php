@@ -20,6 +20,6 @@
 
 			<li><a href="users.php"><em class="fa fa-users">&nbsp;</em> Users</a></li>
 			
-			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li><a href="functions/logout.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
